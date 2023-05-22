@@ -57,8 +57,7 @@ a {
 
 a:hover {
     color: #C69902;
-    scale 1.1
-    transition: .5s;
+    scale: 1.1
 }
 
 footer {
