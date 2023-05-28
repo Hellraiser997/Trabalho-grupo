@@ -44,7 +44,7 @@ a {
     justify-content: space-between;
 }
 
-a:hover {
+.a-header:hover {
     color: #72E5F2;
     scale: 1.1
 }
@@ -56,6 +56,8 @@ footer {
     text-align: center;
     background: linear-gradient(90deg, #010326 0%, #021859 100%);
     bottom: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 footer p {
@@ -79,7 +81,17 @@ main {
 }
 
 .descricao {
-    width: 500px;
+    width: 490px;
     margin-bottom: 50px;
     margin-top: 20px;
+    color: white;
+}
+
+.link-atribuicao {
+    font-size: 15px;
+}
+
+.link-atribuicao:hover {
+    color: #72E5F2;
+    font-size: 17px;
 }
