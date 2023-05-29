@@ -23,7 +23,7 @@ header {
     top: 0px;
 }
 
-header img {
+.img-logo {
     height: 9rem;
     padding-left: 30px;
 }
