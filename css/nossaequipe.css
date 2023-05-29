@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
 * {
     margin: 0;
@@ -36,7 +37,7 @@ nav {
     height: 100%;
 }
 
-a {
+.link-nav, .link-atribuicao {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -44,14 +45,21 @@ a {
     justify-content: space-between;
 }
 
-.a-header:hover {
+.link-nav {
+    border-radius: 15px;
+    padding: 9px;
+    background: linear-gradient(170deg, #043290, #1c8692);
+
+}
+
+.link-nav:hover {
     color: #72E5F2;
     scale: 1.1
 }
 
 footer {
     /* position: fixed; */
-    /* width: 100vw;     */
+    width: 99vw;    
     padding: 20px;
     text-align: center;
     background: linear-gradient(90deg, #010326 0%, #021859 100%);
@@ -85,6 +93,8 @@ main {
     margin-bottom: 50px;
     margin-top: 20px;
     color: white;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 .link-atribuicao {
@@ -94,4 +104,147 @@ main {
 .link-atribuicao:hover {
     color: #72E5F2;
     font-size: 17px;
+}
+
+/* responsivo mobile 320x667 */
+
+@media screen and (max-width: 321px) {
+    header {
+        height: 70rem;
+        width: 321px;
+        background: linear-gradient(90deg, #010326 0%, #021859 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+        position: sticky;
+        top: 0px;
+    }
+
+    main {
+        width: 320px;
+    }    
+
+    .img-logo {
+        height: 80px;
+        margin-right: 34px;
+        margin-top: 10px;
+    }
+
+    nav {
+        display: flex;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+        align-items: center;
+        width: 4px;
+        height: 25rem;
+    }
+
+    .link-nav {
+        border-radius: 15px;
+        padding: 13px;
+        background: linear-gradient(170deg, #043290, #1c8692);
+    }
+    
+    .link-nav, .link-atribuicao {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+        justify-content: space-between;
+    }
+
+    .foto-padrao {
+        width: 215px;
+        height: 200px;
+        margin-top: 10px;
+        margin-right: 30px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.943);
+    }
+    
+    .descricao {
+        width: 220px;
+        margin-bottom: 50px;
+        margin-top: 20px;
+        color: white;
+    }
+    
+    footer p {
+        color: #72E5F2;
+        margin-right: 10px;
+    }
+}
+
+/* tamanho de tela de 500px */
+
+@media screen and (max-width: 507px) {
+    header {
+        height: 70rem;
+        width: 501px;
+        background: linear-gradient(90deg, #010326 0%, #021859 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+        position: sticky;
+        top: 0px;
+    }
+
+    main {
+        width: 501px;
+    }    
+
+    .img-logo {
+        height: 80px;
+        margin-right: 34px;
+        margin-top: 10px;
+    }
+
+    nav {
+        display: flex;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+        align-items: center;
+        width:  150px;
+        height: 25rem;
+    }
+
+    .link-nav {
+        border-radius: 15px;
+        padding: 13px;
+        background: linear-gradient(170deg, #043290, #1c8692);
+    }
+    
+    .link-nav, .link-atribuicao {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500px;
+        color: white;
+        justify-content: space-between;
+    }
+
+    .foto-padrao {
+        width: 215px;
+        height: 200px;
+        margin-top: 10px;
+        margin-right: 30px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.943);
+    }
+    
+    .descricao {
+        width: 220px;
+        margin-bottom: 50px;
+        margin-top: 20px;
+        color: white;
+    }
+
+    footer {
+        width: 501px;
+    }
+    
+    footer p {
+        color: #72E5F2;
+    }
 }
