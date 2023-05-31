@@ -1,5 +1,5 @@
 function validarEmail() {
-  // Obtém o valor do campo de e-mail
+    // Obtém o valor do campo de e-mail
   var email = document.getElementById('email').value;
   
   // Expressão regular para validar o formato do e-mail
@@ -26,6 +26,7 @@ function enviarFormulario() {
     exibirMensagem('O(s) campo(s) não pode ficar em branco.');
     return;
   }
+  
   // Se a validação for bem-sucedida, exibe mensagem de sucesso
   exibirMensagem('successMessage', 'Formulário enviado com sucesso!');
   
