@@ -22,21 +22,10 @@ function enviarFormulario() {
   var email = document.getElementById('email').value;
   var mensagem = document.getElementById('mensagem').value;
   
-  if (nome === '') {
-    exibirMensagem('nomeError', 'Preencha o campo Nome.');
+  if (nome === '' || email === '' || mensagem === '') {
+    exibirMensagem('O(s) campo(s) não pode ficar em branco.');
     return;
   }
-  
-  if (email === '') {
-    exibirMensagem('emailError', 'Preencha o campo E-mail.');
-    return;
-  }
-
-  if (mensagem === '') {
-    exibirMensagem('msgError', 'Preencha o campo Mensagem.');
-    return;
-  }
-  
   // Se a validação for bem-sucedida, exibe mensagem de sucesso
   exibirMensagem('successMessage', 'Formulário enviado com sucesso!');
   
