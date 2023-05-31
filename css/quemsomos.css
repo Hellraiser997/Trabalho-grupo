@@ -1,13 +1,13 @@
+main.container {
+    padding: 2rem;
+    max-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
 
-    
-    
-    
-
-
-
-.empresa{ 
-    text-align: center;
-    margin: 40px;
-color: #044BD9;
-font-weight: 200;
+main.container img {
+    border-radius: 300px;
+    width: 50vw;
 }
