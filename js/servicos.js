@@ -4,8 +4,7 @@ function calcularHora(){
     diaDaSemana = Number(prompt("Qual dia da semana pretende jogar:\nDigite 1 para Segunda-feira a Quinta-feira\nDigite 2 para Sexta-feira a Domingo"))
     qtdPessoas = Number(prompt("Quantas pessoas irão jogar? (Digite apenas número)"))
     if(qtdPessoas <= 0){
-        alert("Valor inválido")
-        calcularHora()
+        alert("Valor inválido") 
     }
     horaExtra = Number(prompt("Digite quantos minutos adicionais pretende ficar: 0 - 300"))
     console.log(diaDaSemana)
