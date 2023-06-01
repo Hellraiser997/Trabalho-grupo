@@ -2,7 +2,8 @@ main {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 50px;
 }
 section.box {
   position: relative;
@@ -12,6 +13,7 @@ section.box {
   border-radius: 50px 5px;
   overflow: hidden;
 }
+
 section.box::before {
   content: '';
   position: absolute;
@@ -21,9 +23,9 @@ section.box::before {
   height: 450px;  
   background: linear-gradient(60deg, transparent, #72E5F2, #72E5F2);
   transform-origin: bottom right;
-  animation: animate 6s linear infinite;
-  
+  animation: animate 6s linear infinite;  
 }
+
 section.box::after {
   content: '';
   position: absolute;
@@ -55,8 +57,4 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;  
-}
-
-footer {
-  background: linear-gradient(90deg, #010326 0%, #021859 100%);
 }
