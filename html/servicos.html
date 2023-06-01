@@ -26,7 +26,7 @@
       <h2>Cardápio</h2>
       <div class="lista-comida">
         <ul>
-          <h3>Porções</h3>
+          <h3 id="oii">Porções</h3>
           <li>Batata frita: 20,00 R$</li>
           <li>Polenta frita: 18,00 R$</li>
           <li>Calabresa: 22,00 R$</li>
@@ -40,27 +40,7 @@
           <li>X-Tudo: 25,00 R$</li>
         </ul>
       </div>
-    </section>
-    <section class="pista-boliche">
-      <form>
-        <h3>Calcule a hora na pista:</h3>
-        <p>Primeira hora de Segunda a Quinta-feira é 45,00 R$ e de Sexta a Domingo 60,00 R$</p>
-        <label for="dia">Selecione o dia da semana:</label>
-        <select name=dia id="dia-semana">
-          <option value="1">Segunda-feira</option>
-          <option value="2">Terça-feira</option>
-          <option value="3">Quarta-feira</option>
-          <option value="4">Quinta-feira</option>
-          <option value="5">Sexta-feira</option>
-          <option value="6">Sábado</option>
-          <option value="7">Domingo</option>
-        </select>
-        <br>
-        <label for="tempo-adicional">Tempo adicional em minutos</label>
-        <input type="number" name="tempo-adicional" id="tempo-adicional" class="tempo" value="0" min="0" max="300">
-        <br>
-        <input type="button" value="Enviar" class="botao" onclick="calcularHora()">
-      </form>
+      <button onclick="calcularHora()">Calcular Hora</button>
     </section>
   </main>
   <footer>
