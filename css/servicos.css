@@ -1,9 +1,12 @@
+/* Define as propriedades para a tag <main> */
 main {
     width: 100%;
     height: 100%;
+    /* Define um degradê linear como plano de fundo */
     background: linear-gradient(170deg, #043290, #1c8692);
 }
 
+/* Define as propriedades para a tag <section> */
 section {
     display: flex;
     flex-direction: column;
@@ -12,69 +15,88 @@ section {
     height: 100%;
 }
 
+/* Define as propriedades para a tag <h2> */
 h2 {
     color: #FFFFFF;
+    /* Aplica um filtro de brilho de 60% ao plano de fundo */
     backdrop-filter: brightness(60%);
     padding: 10px;
+    /* Define um raio de 10 pixels para arredondar os cantos */
     border-radius: 10px;
     font-size: 22pt;
     margin-top: 10%;
     margin-bottom: 20px;
 }
 
+/* Define as propriedades para a classe .cardapio */
 .cardapio {
+    /* Aplica um filtro de brilho de 60% ao plano de fundo */
     backdrop-filter: brightness(60%);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    /* Permite que os elementos filhos sejam quebrados em várias linhas */
     flex-wrap: wrap;
+    /* Define um raio de borda personalizado */
     border-radius: 35px 10em 0%;
     padding: 20px;
 }
 
-.cardapio-lista {
+/* Define as propriedades para a classe .cardapio-itens */
+.cardapio-itens {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
     font-size: 16pt;
-    width: 100;
 }
 
+/* Define as propriedades para a tag <h3> */
 h3 {
     font-size: 19pt;
 }
 
+/* Define as propriedades para a tag <ul> */
 ul {
     margin: 50px;
+    /* Remove os marcadores de lista */
     list-style: none;
+    /* Define uma borda sólida de 1px na cor branca */
     border: solid 1px #FFFFFF;
-    padding: 5px
+    padding: 5px;
 }
 
+/* Define as propriedades para a tag <form> */
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
+/* Define as propriedades para a classe .botao */
 .botao {
+    /* Define a base flexível como 20% do espaço disponível */
     flex-basis: 20%;
     width: 150px;
     height: 50px;
+    /* Define o plano de fundo como transparente */
     background: transparent;
+    /* Define uma borda sólida de 1px na cor branca */
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
+    /* Adiciona uma transição de 0.5 segundos para efeitos de transição */
     transition: 0.5s;
 }
 
+/* Define as propriedades para a classe .botao quando o mouse está sobre ele */
 .botao:hover {
     background-color: #FFFFFF;
     color: #043290;
+    /* Adiciona uma transição de 0.5 segundos para efeitos de transição */
     transition: 0.5s;
+    /* Define um raio de borda personalizado */
     border-radius: 35px 10em 0%;
 }
