@@ -5,15 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link das folhas de estilo para padronização e personalização específica -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/servicos.css">
+  <!-- Link do arquivo com o script para calcular a hora na pista de boliche -->
   <script src="../js/servicos.js" defer></script>
   <title>BoliCrash</title>
 </head>
 
 <body>
+  <!--Início do header-->
   <header>
-    <img src="../img/logo.png" alt=""/>
+    <img src="../img/logo.png" alt="" />
+    <!-- Tag nav para agrupar os elementos de navegação-->
     <nav>
       <a href="../html/quemsomos.html">Quem Somos</a>
       <a href="../html/nossaequipe.html">Nossa Equipe</a>
@@ -21,11 +25,15 @@
       <a href="../html/contato.html">Contato</a>
     </nav>
   </header>
+  <!--Fim do Header-->
   <main>
+    <!-- Início da section com o conteúdo principal-->
     <section>
       <h2>Cardápio</h2>
-      <div class="cardapio">
-        <div class="cardapio-lista">
+      <!-- A div com classe "container" agrupa o cardápio e o botão-->
+      <div class="container">
+        <!-- A div "Porcoes" agrupa todos os elementos que são exibidos em porções-->
+        <div class="porcoes">
           <h3>Porções</h3>
           <ul>
             <li>Batata frita: 20,00 R$</li>
@@ -35,7 +43,9 @@
             <li>Onion Rings: 16,00 R$</li>
           </ul>
         </div>
-        <div class="cardapio-lista">
+        <!-- Fim da div "Porcoes" -->
+        <!-- A div "Lanches" agrupa todos os elementos que são exibidos em porções-->
+        <div class="lanches">
           <h3>Lanches</h3>
           <ul>
             <li>X-Bacon: 20,00 R$</li>
@@ -45,13 +55,16 @@
             <li>X-Picanha: 50,00 R$</li>
           </ul>
         </div>
+        <!-- Fim da div "Lanches" -->
+        <!-- Botão que é exibido para calcular hora na pista de boliche-->
         <button onclick="calcularHora()" class="botao">Calcular Hora</button>
       </div>
+      <!-- Fim da div "Container" -->
     </section>
+    <!--Fim da section -->
   </main>
   <footer>
     <p>Feito com 💛 por Squad 2. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
