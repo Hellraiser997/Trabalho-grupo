@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 
+/* Definições globais */
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Estilo do corpo */
 body {
     display: flex;
     flex-direction: column;
@@ -15,6 +17,7 @@ body {
     /* overflow: hidden; */
 }
 
+/* Estilo do cabeçalho */
 header {
     height: 70px;
     width: 100vw;
@@ -25,6 +28,7 @@ header {
     top: 0px;
 }
 
+/* Estilo da navegação */
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -33,6 +37,7 @@ nav {
     height: 100%;
 }
 
+/* Estilo do rodapé */
 footer {
     /* position: fixed; */
     width: 99vw;    
@@ -44,24 +49,27 @@ footer {
     flex-direction: column;
 }
 
+/* Estilo do texto no rodapé */
 footer p {
     color: #72E5F2;
 }
 
+/* Estilo do conteúdo principal */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 70px;
     background: linear-gradient(170deg, #043290, #1c8692);
-
 }
 
+/* Estilo da imagem e descrição */
 picture {
     display: flex;
     align-items: center;
 }
 
+/* Estilo dos links de navegação e atribuição */
 .link-nav, .link-atribuicao {
     text-decoration: none;
     font-size: 20px;
@@ -70,23 +78,25 @@ picture {
     justify-content: space-between;
 }
 
+/* Estilo dos links de navegação */
 .link-nav {
     border-radius: 15px;
     padding: 9px;
-   
-
 }
 
+/* Estilo dos links de navegação ao passar o mouse */
 .link-nav:hover {
     color: #72E5F2;
-    scale: 1.1
+    scale: 1.1;
 }
 
+/* Estilo do logotipo */
 .img-logo {
     height: 9rem;
     padding-left: 30px;
 }
 
+/* Estilo das fotos padrão */
 .foto-padrao {
     width: 500px;
     height: 400px;
@@ -96,6 +106,7 @@ picture {
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.943);
 }
 
+/* Estilo da descrição */
 .descricao {
     width: 490px;
     margin-left: 20px;
@@ -106,10 +117,12 @@ picture {
     font-family: 'Inter', sans-serif;
 }
 
+/* Estilo dos links de atribuição */
 .link-atribuicao {
     font-size: 15px;
 }
 
+/* Estilo dos links de atribuição ao passar o mouse */
 .link-atribuicao:hover {
     color: #72E5F2;
     font-size: 17px;
