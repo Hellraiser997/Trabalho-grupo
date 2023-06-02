@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -9,24 +12,21 @@ body {
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-    background: ;
+    background: linear-gradient(170deg, #043290, #1c8692);
+    color: white;
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #010326;
     height: 70px;
+    background: linear-gradient(90deg, #010326 0%, #021859 100%);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
 }
 
-h1 {
-    width: 40%;
-    padding-left: 20px;
-    font-size: 40px;
-    color: #C69902;
-    letter-spacing: 1rem;
+header img {
+    height: 9rem;
+    padding: 10px 30px;
 }
 
 nav {
@@ -37,36 +37,25 @@ nav {
     height: 100%;
 }
 
-button {
-    width: 80px;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    flex-direction: row;
-}
-
 a {
     text-decoration: none;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 300;
     color: white;
     justify-content: space-between;
 }
 
 a:hover {
-    color: #C69902;
-    scale: 1.1
+    color: #72E5F2;
+    transition: .5s;
 }
 
-footer {
-    width: 100vw;
-    text-align: center;
+footer {    
+    position: fixed;
+    width: 100vw;    
     padding: 20px;
-    position: absolute;
-}
-
-footer p span {
-    color: var(--roxo-escuro);
+    text-align: center;
+    background: linear-gradient(90deg, #010326 0%, #021859 100%);
+    bottom: 0;
+    font-weight: 300;
 }
