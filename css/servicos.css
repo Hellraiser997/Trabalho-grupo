@@ -29,7 +29,7 @@ h2 {
 }
 
 /* Define as propriedades para a classe .cardapio */
-.cardapio {
+.container {
     /* Aplica um filtro de brilho de 60% ao plano de fundo */
     backdrop-filter: brightness(60%);
     display: flex;
@@ -44,7 +44,7 @@ h2 {
 }
 
 /* Define as propriedades para a classe .cardapio-itens */
-.cardapio-itens {
+.porcoes, .lanches {
     display: flex;
     flex-direction: column;
     align-items: center;
