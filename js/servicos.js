@@ -1,4 +1,4 @@
-var horaBaseReais, diaDaSemana, horaExtra, valorDaHora, qtdPessoas, valorDaHoraPessoa
+var horaBaseReais, diaDaSemana, horaExtra, valorDaHora, qtdPessoas, valorDaHoraPorPessoa
 const adicionalPorMinuto = 0.50
 function calcularHora(){
     diaDaSemana = Number(prompt("Qual dia da semana pretende jogar:\nDigite 1 para Segunda-feira a Quinta-feira\nDigite 2 para Sexta-feira a Domingo"))
@@ -14,14 +14,14 @@ function calcularHora(){
         horaBaseReais = 60
     }
     valorDaHora = horaBaseReais + (horaExtra*adicionalPorMinuto)
-    valorDaHoraPessoa = valorDaHora/qtdPessoas
+    valorDaHoraPorPessoa = valorDaHora/qtdPessoas
     valorDaHora = valorDaHora.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
     horaBaseReais = horaBaseReais.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-    valorDaHoraPessoa = valorDaHoraPessoa.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+    valorDaHoraPorPessoa = valorDaHoraPorPessoa.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 
     if(qtdPessoas == 1) {
         alert("O valor da pista ficou em: "+valorDaHora+"\nSendo o valor base: "+horaBaseReais)
     } else { 
-        alert("O valor da pista ficou em: "+valorDaHora+"\nSendo o valor base: "+horaBaseReais+"\nValor por pessoa: "+valorDaHoraPessoa)
+        alert("O valor da pista ficou em: "+valorDaHora+"\nSendo o valor base: "+horaBaseReais+"\nValor por pessoa: "+valorDaHoraPorPessoa)
     }
 }
