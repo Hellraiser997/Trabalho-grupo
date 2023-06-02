@@ -1,25 +1,60 @@
+main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(170deg, #043290, #1c8692);
+}
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     border: 2px solid black;
+    height: 100%;
 }
 
-.lista-comida {
+h2 {
+    color: #FFFFFF;
+    backdrop-filter: brightness(60%);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 22pt;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+.cardapio {
+    backdrop-filter: brightness(60%);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 35px 10em 0%;
+    padding: 20px;
+}
+
+.cardapio-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 16pt;
+    width: 100;
+}
+
+h3 {
+    font-size: 19pt;
 }
 
 ul {
     margin: 50px;
+    list-style: none;
+    border: solid 1px #FFFFFF;
+    padding: 5px
 }
 
 form {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,12 +62,19 @@ form {
 
 }
 
-.input-number { 
-    text-align: center;
+.botao {
+    flex-basis: 20%;
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    transition: 0.5s;
 }
 
-.botao { 
-    width: 100px;
-    background: transparent;
-    border-radius: 5px;
+.botao:hover {
+    background-color: #FFFFFF;
+    color: #043290;
+    transition: 0.5s;
+    border-radius: 35px 10em 0%;
 }
