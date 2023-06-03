@@ -1,14 +1,15 @@
 main { 
-  min-height: 100vh;
+  height: 80%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  margin-top: 50px;
+  align-items: center;
+  padding: 20px;
 }
+
 section.box {
   position: relative;
   width: 350px;
-  height: 400px;  
+  height: 100%;
   color: #ffffff;
   border-radius: 50px 5px;
   overflow: hidden;
