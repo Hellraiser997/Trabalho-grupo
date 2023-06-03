@@ -1,5 +1,7 @@
+/* Importa a fonte 'Poppins' do Google Fonts com diferentes pesos */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap%27');
 
+/* Define estilos globais para todos os elementos, como margem, preenchimento, caixa-modelo e fonte */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Estiliza o corpo do documento:
+   - Exibe o conteúdo em uma coluna
+   - Define a altura do corpo como 100% da altura da viewport
+   - Oculta o overflow (rolagem) do corpo
+   - Define um plano de fundo com um gradiente linear
+   - Define a cor do texto como branco */
 body {
     display: flex;
     flex-direction: column;
@@ -16,6 +24,14 @@ body {
     color: white;
 }
 
+/* Estiliza o cabeçalho:
+   - Define a altura do cabeçalho como 50 pixels
+   - Define um plano de fundo com um gradiente linear
+   - Exibe o conteúdo do cabeçalho em uma linha
+   - Alinha o conteúdo do cabeçalho horizontalmente, distribuindo-o igualmente
+   - Alinha o conteúdo verticalmente ao centro
+   - Define o peso da fonte como 300 (leve)
+   - Define um preenchimento de 0 nas laterais e 20 pixels no topo e na base */
 header {
     height: 50px;
     background: linear-gradient(90deg, #010326 0%, #021859 100%);
@@ -26,16 +42,27 @@ header {
     padding: 0 20px;
 }
 
+/* Estiliza a imagem do logotipo no cabeçalho:
+   - Define a altura da imagem como 9 rem
+   - Define um preenchimento de 10 pixels nas laterais e 30 pixels no topo e na base
+   - Alinha a imagem à linha de base do cabeçalho */
 header img {
     height: 9rem;
     padding: 10px 30px;
     align-self: baseline;
 }
 
+/* Esconde o elemento <h2> dentro do cabeçalho */
 header h2 {
     display: none;
 }
 
+/* Estiliza a navegação:
+   - Exibe o conteúdo da navegação em uma linha
+   - Alinha o conteúdo da navegação horizontalmente, distribuindo-o igualmente
+   - Alinha o conteúdo verticalmente ao centro
+   - Define a largura da navegação como 70% do contêiner pai
+   - Define a altura da navegação como 100% */
 nav {
     display: flex;
     justify-content: space-between;
@@ -44,6 +71,12 @@ nav {
     height: 100%;
 }
 
+/* Estiliza os links <tags a>:
+   - Remove a decoração de texto (sublinhado)
+   - Define o tamanho da fonte como 1 rem
+   - Define o peso da fonte como 300 (leve)
+   - Define a cor do texto como branco
+   - Alinha o conteúdo do link horizontalmente, distribuindo-o igualmente */
 a {
     text-decoration: none;
     font-size: 1rem;
@@ -51,12 +84,25 @@ a {
     color: white;
     justify-content: space-between;
 }
-
+   
+/* Estiliza o link quando o mouse passa por cima:
+    - Altera a cor do texto para #72E5F2 (azul claro)
+    - Adiciona uma transição suave de 0,5 segundos na mudança de cor */
 a:hover {
     color: #72E5F2;
     transition: .5s;
 }
 
+/* Estiliza o rodapé:
+    - Define a posição fixa, fazendo com que o rodapé fique sempre visível no final da página
+    - Define a largura do rodapé como 100% da largura da viewport
+    - Define um preenchimento de 10 pixels no topo e na base do rodapé
+    - Alinha o texto centralmente
+    - Define um plano de fundo com um gradiente linear
+    - Posiciona o rodapé na parte inferior da página
+    - Define o peso da fonte como 300 (leve)
+    - Define o tamanho da fonte como 1 rem
+    - Define a altura do rodapé como 10 unidades de altura da viewport (dvh) */
 footer {
     position: fixed;
     width: 100vw;
