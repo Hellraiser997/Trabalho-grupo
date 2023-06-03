@@ -13,6 +13,7 @@ section.box {
   color: #ffffff;
   border-radius: 50px 5px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 section.box::before {

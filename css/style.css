@@ -21,6 +21,7 @@ header {
     background: linear-gradient(90deg, #010326 0%, #021859 100%);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: 300;
     padding: 0 20px;
 }
@@ -28,6 +29,11 @@ header {
 header img {
     height: 9rem;
     padding: 10px 30px;
+    align-self: baseline;
+}
+
+header h2 {
+    display: none;
 }
 
 nav {
