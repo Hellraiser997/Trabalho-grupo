@@ -4,19 +4,12 @@
     /* Estilo do cabeçalho */
     header {
         height: 30rem;
-        width: 321px;
         background: linear-gradient(90deg, #010326 0%, #021859 100%);
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: space-between; */
         position: sticky;
         top: 0;
-    }
-
-    /* Estilo do conteúdo principal */
-    main {
-        width: 320px;
     }
 
     /* Estilo da imagem */
@@ -27,16 +20,10 @@
     /* Estilo da navegação */
     nav {
         display: flex;
-        /* justify-content: space-evenly; */
         flex-direction: column;
         align-items: center;
         width: 4px;
         height: 25rem;
-    }
-
-    /* Estilo do rodapé */
-    footer {
-        width: 320px;
     }
 
     /* Estilo do texto no rodapé */
