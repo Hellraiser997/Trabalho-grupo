@@ -1,5 +1,6 @@
 function enviarFormulario() {
   // Validação do formulário
+  //document.getElementById('nome') é uma chamada à função getElementById do objeto document do JavaScript. Essa função é usada para obter uma referência a um elemento HTML com base no valor do atributo id.
   var nome = document.getElementById('nome').value; // Obtém o valor do campo de nome
   var email = document.getElementById('email').value; // Obtém o valor do campo de email
   validarEmail(); // Chama a função de validação de email
