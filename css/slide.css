@@ -23,4 +23,23 @@ Eles estão associando estilos específicos aos elementos que são irmãos subse
     overflow: hidden;
 }
 
+.slides-list {
+    --selected-item: 0;
+    --total-items: 5;
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+    position: relative;
+    left: calc(var(--selected-item) * -100%);
+    /* Define a posição horizontal do elemento em relação ao pai. O -100% idnica que o elemento será movido para a esquerda  */
+    width: calc(Var(--total-items * 100%));
+    /* Define a largura em relação ao elemento pai. O 100% ajusta a largura para cobrir os elementos da lista */
+    transition: left 04s cubic-bezier(0,.680, -0.550, 0.265, 1.550);
+    /* Dá uma transição mais suave para a propriedade 'left' */
 
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+/*Essa parte do código define o comportamento da lista de slides através do uso de variáveis para controlar o item selecionado e o número de itens presentes na lista. 
