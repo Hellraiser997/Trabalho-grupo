@@ -17,14 +17,13 @@ function enviarFormulario() {
   // Validação do formulário
   var nome = document.getElementById('nome').value;
   var email = document.getElementById('email').value;
-  var mensagem = document.getElementById('mensagem').value;
   validarEmail() 
   if (nome == '' || email == '' || mensagem == ''){
-    alert('O(s) campo(s) não pode ficar em branco.');
-  } 
-
-  // Se a validação for bem-sucedida, exibe mensagem de sucesso
-  alert('Formulário enviado com sucesso!');
+    alert('O(s) campo(s) não podem ficar em branco.');
+  } else{
+    // Se a validação for bem-sucedida, exibe mensagem de sucesso
+    alert('Formulário enviado com sucesso!');
+  }
   
   // Limpa o formulário após a submissão
   document.getElementById('formulario').reset();
