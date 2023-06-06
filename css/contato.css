@@ -1,43 +1,73 @@
-main { 
-  min-height: 100vh;
-  background-color: #23242a;
+/* Estiliza a seção principal:
+   - Define a altura da seção como 80% do contêiner pai
+   - Exibe o conteúdo da seção centralizado horizontalmente
+   - Alinha o conteúdo da seção centralizado verticalmente
+   - Define um preenchimento de 20 pixels em todas as direções */
+main {
+  height: 80%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
+
+/* Estiliza a seção com classe "box":
+   - Define a posição como relativa
+   - Define a largura da seção como 350 pixels
+   - Define a altura da seção como 100% do contêiner pai
+   - Define a cor do texto como branco
+   - Define um raio de borda de 50 pixels no canto superior esquerdo e 5 pixels no canto superior direito
+   - Define o overflow (rolagem) da seção como oculto
+   - Define uma margem inferior de 20 pixels */
 section.box {
-  margin-top: 30px;
   position: relative;
   width: 350px;
-  height: 400px;  
-  background-color: #1c1c1c;
+  height: 100%;
   color: #ffffff;
   border-radius: 50px 5px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
+
+/* Criei 2 elementos para dar o efeito de animação ao redor do form,
+  usando os pseudo-elementos ::before e ::after da seção "box" e estilizei o ::before 
+  da seguinte maneira :
+   - o conteúdo como vazio
+   - a posição como absoluta
+   - a posição superior como -50% do contêiner pai
+   - a posição esquerda como -50% do contêiner pai
+   - a largura como 370 pixels
+   - a altura como 450 pixels
+   - um plano de fundo com um gradiente linear
+   - a origem da transformação no canto inferior direito
+   - Aplica uma animação chamada "animate" com duração de 6 segundos, linear e infinita */
 section.box::before {
   content: '';
   position: absolute;
   top: -50%;
   left: -50%;
   width: 370px;
-  height: 450px;  
+  height: 450px;
   background: linear-gradient(60deg, transparent, #72E5F2, #72E5F2);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
-  
 }
+
+/* Na estilização o pseudo-elemento ::after da seção "box" a única diferença é a cor 
+e um atraso de 3 segundos na animação, para não ficar na mesma posição que o ::before*/  
 section.box::after {
   content: '';
   position: absolute;
   top: -50%;
   left: -50%;
   width: 370px;
-  height: 450px;  
+  height: 450px;
   background: linear-gradient(60deg, transparent, #d9138a, #d9138a);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
   animation-delay: -3s;
 }
+
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -51,11 +81,51 @@ form {
   position: absolute;
   inset: 2px;
   border-radius: 50px 5px;
-  background-color: #28292d;
+  background: linear-gradient(170deg, #043290, #1c8692);
   z-index: 10;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;  
+  gap: 2.4px;
+}
+
+form h2 {  
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  padding: 15px 0;
+}
+
+form input, textarea {
+  background-color: transparent;
+  backdrop-filter: brightness(60%);
+  border: 1px solid black;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* Define as propriedades para a classe .botao */
+.botao {
+  /* Define a base flexível como 20% do espaço disponível */
+  width: 150px;
+  height: 50px;
+  /* Define o plano de fundo como transparente */
+  background: transparent;
+  /* Define uma borda sólida de 1px na cor branca */
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  align-self: center;
+  /* Adiciona uma transição de 0.5 segundos para efeitos de transição */
+  transition: 0.5s;
+  margin-top: 30px;
+}
+
+/* Define as propriedades para a classe .botao quando o mouse está sobre ele */
+.botao:hover {
+  background-color: #FFFFFF;
+  color: #043290;
+  /* Define um raio de borda personalizado */
+  border-radius: 35px 10em 0%;
 }
