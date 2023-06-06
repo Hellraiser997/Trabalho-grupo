@@ -11,8 +11,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
-    height: 100%;
+    
 }
 
 /* Define as propriedades para a tag <h2> */
@@ -24,7 +23,7 @@ h2 {
     /* Define um raio de 10 pixels para arredondar os cantos */
     border-radius: 10px;
     font-size: 22pt;
-    margin-top: 10%;
+    margin-top: 2%;
     margin-bottom: 20px;
 }
 
@@ -36,11 +35,10 @@ h2 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* Permite que os elementos filhos sejam quebrados em várias linhas */
-    flex-wrap: wrap;
     /* Define um raio de borda personalizado */
     border-radius: 35px 10em 0%;
     padding: 20px;
+    margin-bottom: 10px;
 }
 
 /* Define as propriedades para a classe .cardapio-itens */
@@ -64,22 +62,40 @@ ul {
     /* Remove os marcadores de lista */
     list-style: none;
     /* Define uma borda sólida de 1px na cor branca */
-    border: solid 1px #FFFFFF;
+    border: solid 1px #FFFFFF ;
     padding: 5px;
+    border-radius: 10px ;
 }
 
 /* Define as propriedades para a tag <form> */
-form {
+.formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #FFFFFF;
+    backdrop-filter: brightness(60%);
+    border-radius: 35px 10em 0%;
+    padding: 50px;
+}
+
+/* Define as propriedades para a tag <input> do tipo number */
+.input-number, select {
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+/* Define a cor de texto preta para os elementos da tag option */
+option {
+    color: black;
 }
 
 /* Define as propriedades para a classe .botao */
 .botao {
+    margin-top: 15px;
     /* Define a base flexível como 20% do espaço disponível */
-    flex-basis: 20%;
     width: 150px;
     height: 50px;
     /* Define o plano de fundo como transparente */
@@ -95,8 +111,6 @@ form {
 .botao:hover {
     background-color: #FFFFFF;
     color: #043290;
-    /* Adiciona uma transição de 0.5 segundos para efeitos de transição */
-    transition: 0.5s;
     /* Define um raio de borda personalizado */
     border-radius: 35px 10em 0%;
 }
