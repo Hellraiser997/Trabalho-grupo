@@ -27,7 +27,7 @@
   </header>
   <!--Fim do Header-->
   <main>
-    <!-- Início da section com o conteúdo principal-->
+    <!-- Início da section com a lista de comidas-->
     <section>
       <h2>Cardápio</h2>
       <!-- A div com classe "container" agrupa o cardápio e o botão-->
@@ -57,11 +57,35 @@
         </div>
         <!-- Fim da div "Lanches" -->
         <!-- Botão que é exibido para calcular hora na pista de boliche-->
-        <button onclick="calcularHora()" class="botao">Calcular Hora</button>
       </div>
       <!-- Fim da div "Container" -->
     </section>
-    <!--Fim da section -->
+    <!--Fim da section de comidas -->
+    <!-- Início da section de calculo da hora -->
+    <section>
+      <form class="formulario">
+        <label for="dias">Selecione o dia da semana:</label>
+        <!-- Início da tag select para exibir diversos dias da semana -->
+        <select name="dias">
+          <option value="1" selected>Segunda-feira</option>
+          <option value="2">Terça-feira</option>
+          <option value="3">Quarta-feira</option>
+          <option value="4">Quinta-feira</option>
+          <option value="5">Sexta-feira</option>
+          <option value="6">Sábado</option>
+          <option value="7">Domingo</option>
+        </select>
+        <!-- Fim da tag select -->
+        <!-- Label e input para o tempo adicional na pista -->
+        <label for="minutos">Quantos minutos adicionais:</label>
+        <input type="number" name="minutos" id="minutos-adicionais" class="input-number" value="0" min="0" max="300">
+        <!-- Label e input para a quantidade de pessoas que irão jogar -->
+        <label for="qtdPessoas">Quantas pessoas vão jogar:</label>
+        <input type="number" name="qtdPessoas" id="quantidade-pessoas" class="input-number" value="1" min="1" max="6">
+        <button onclick="calcularHora()" class="botao">Calcular Hora</button>
+      </form>
+    </section>
+    <!-- Fim da section de calculo de hora -->
   </main>
   <footer>
     <p>Feito com 💛 por Squad 2. All rights reserved.</p>
