@@ -1,27 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>BoliCrash</title>
-  </head>
-  <body>
+    <!--Link do estilo das páginas-->
+    <link rel="stylesheet" href="./css/slide.css">
+    <!--Link da estilização dos slides da página-->
+    <title>Bolicrash</title>
+</head>
+<body>
     <header>
-      <img src="../img/logo.png" alt=""/>
-      <nav>
-        <a href="./html/quemsomos.html">Quem Somos</a>
-        <a href="./html/nossaequipe.html">Nossa Equipe</a>
-        <a href="./html/servicos.html">Serviços</a>
-        <a href="./html/contato.html">Contato</a>
-      </nav>
+        <img src="img/logo.png">
+        <nav>
+            <a href="./html/quemsomos.html">Quem Somos</a>
+            <a href="./html/nossaequipe.html">Nossa Equipe</a>
+            <a href="./html/servicos.html">Serviços</a>
+            <a href="./html/contato.html">Contato</a>
+            <!--Seção de navegação entre as partes do site-->
+        </nav>
     </header>
     <main>
-      
+        <section>
+
+            <input type="radio" class="slide-controller" name="slide" checked/>
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+            <!--Seção para definição dos botões seletores dos slides-->
+            <!--Type="radio" especifica que é um botão de opção-->
+            <!--class="slide-controller" define a classe no CSS-->
+            <!--name="slide" define o nome do grupo dos botões-->
+            <!--cheked, na linha 27, indica que, sempre que a página for carregada, este será o botão selecionado-->
+
+            <div class="slide-show">
+                <ul class="slides-lista">
+                    <li class="slide">
+                        <img src="img/slider/imagem1.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider/imagem2.jpeg">
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider/imagem3.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider/imagem4.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider/imagem5.jpg">
+                    </li>
+                    <!--Lista que será utilizada como slider-->
+                </ul>
+            </div>
+            <h2>Venha se divertir e fazer strikes conosco no melhor clube de boliche da cidade! Junte-se a nós e transforme suas tardes em pura diversão nas pistas!</h2>
+        </section>
     </main>
+    
     <footer>
-      <p>Feito com 💛 por Squad 2. All rights reserved.</p>      
+        <p>Feito com 💛 por Squad 2. All rights reserved.</p>
     </footer>
-  </body>
+</body>
 </html>
