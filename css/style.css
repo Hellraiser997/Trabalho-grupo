@@ -1,12 +1,11 @@
 /* Importa a fonte 'Poppins' do Google Fonts com diferentes pesos */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap%27');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 /* Define estilos globais para todos os elementos, como margem, preenchimento, caixa-modelo e fonte */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Estiliza o corpo do documento:
@@ -33,13 +32,12 @@ body {
    - Define o peso da fonte como 300 (leve)
    - Define um preenchimento de 0 nas laterais e 20 pixels no topo e na base */
 header {
-    height: 50px;
+    height: 70px;
+    width: 100vw;
     background: linear-gradient(90deg, #010326 0%, #021859 100%);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-weight: 300;
-    padding: 0 20px;
+    top: 0px;
 }
 
 /* Estiliza a imagem do logotipo no cabeçalho:
@@ -50,6 +48,7 @@ header img {
     height: 9rem;
     padding: 10px 30px;
     align-self: baseline;
+    z-index: 1;
 }
 
 /* Esconde o elemento <h2> dentro do cabeçalho */
@@ -65,9 +64,9 @@ header h2 {
    - Define a altura da navegação como 100% */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 70%;
+    width: 45%;
     height: 100%;
 }
 
@@ -79,18 +78,18 @@ nav {
    - Alinha o conteúdo do link horizontalmente, distribuindo-o igualmente */
 a {
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 500;
     color: white;
     justify-content: space-between;
 }
-   
+
 /* Estiliza o link quando o mouse passa por cima:
     - Altera a cor do texto para #72E5F2 (azul claro)
     - Adiciona uma transição suave de 0,5 segundos na mudança de cor */
 a:hover {
     color: #72E5F2;
-    transition: .5s;
+    scale: 1.1;
 }
 
 /* Estiliza o rodapé:
@@ -105,12 +104,20 @@ a:hover {
     - Define a altura do rodapé como 10 unidades de altura da viewport (dvh) */
 footer {
     position: fixed;
-    width: 100vw;
-    padding: 10px;
+    width: 100%;    
+    padding: 20px;
     text-align: center;
     background: linear-gradient(90deg, #010326 0%, #021859 100%);
     bottom: 0;
-    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
     font-size: 1rem;
     height: 10dvh;
+}
+
+footer p {
+    color: #72E5F2;
 }
