@@ -1,5 +1,6 @@
 /* Importa a fonte 'Poppins' do Google Fonts com diferentes pesos */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /* Define estilos globais para todos os elementos, como margem, preenchimento, caixa-modelo e fonte */
 * {
     margin: 0;
@@ -8,19 +9,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Estiliza o corpo do documento:
-   - Exibe o conteúdo em uma coluna
-   - Define a altura do corpo como 100% da altura da viewport
-   - Oculta o overflow (rolagem) do corpo
-   - Define um plano de fundo com um gradiente linear
-   - Define a cor do texto como branco */
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
-    background: linear-gradient(170deg, #043290, #1c8692);
-    color: white;
+html {
+    height: 100%;
+    width: 100%;
 }
 
 /* Estiliza o cabeçalho:
@@ -33,11 +24,10 @@ body {
    - Define um preenchimento de 0 nas laterais e 20 pixels no topo e na base */
 header {
     height: 70px;
-    width: 100vw;
+    width: 100%;
     background: linear-gradient(90deg, #010326 0%, #021859 100%);
     display: flex;
     justify-content: space-between;
-    top: 0px;
 }
 
 /* Estiliza a imagem do logotipo no cabeçalho:
@@ -92,6 +82,25 @@ a:hover {
     scale: 1.1;
 }
 
+/* Estiliza o corpo do documento:
+   - Exibe o conteúdo em uma coluna
+   - Define um plano de fundo com um gradiente linear
+   - Define a cor do texto como branco */
+body {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
+/* Define as propriedades para a tag <main> */
+main {
+    width: 100%;
+    height: 100%;
+    /* Define um degradê linear como plano de fundo */
+    background: linear-gradient(170deg, #043290, #1c8692);
+}
+
 /* Estiliza o rodapé:
     - Define a posição fixa, fazendo com que o rodapé fique sempre visível no final da página
     - Define a largura do rodapé como 100% da largura da viewport
@@ -103,19 +112,17 @@ a:hover {
     - Define o tamanho da fonte como 1 rem
     - Define a altura do rodapé como 10 unidades de altura da viewport (dvh) */
 footer {
-    position: fixed;
-    width: 100%;    
+    width: 100%;
     padding: 20px;
     text-align: center;
     background: linear-gradient(90deg, #010326 0%, #021859 100%);
-    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: 500;
     font-size: 1rem;
-    height: 10dvh;
+    height: 10px;
 }
 
 footer p {
