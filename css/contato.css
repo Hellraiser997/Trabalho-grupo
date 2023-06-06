@@ -86,5 +86,46 @@ form {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;  
+  gap: 2.4px;
+}
+
+form h2 {  
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  padding: 15px 0;
+}
+
+form input, textarea {
+  background-color: transparent;
+  backdrop-filter: brightness(60%);
+  border: 1px solid black;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* Define as propriedades para a classe .botao */
+.botao {
+  /* Define a base flexível como 20% do espaço disponível */
+  width: 150px;
+  height: 50px;
+  /* Define o plano de fundo como transparente */
+  background: transparent;
+  /* Define uma borda sólida de 1px na cor branca */
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  align-self: center;
+  /* Adiciona uma transição de 0.5 segundos para efeitos de transição */
+  transition: 0.5s;
+  margin-top: 30px;
+}
+
+/* Define as propriedades para a classe .botao quando o mouse está sobre ele */
+.botao:hover {
+  background-color: #FFFFFF;
+  color: #043290;
+  /* Define um raio de borda personalizado */
+  border-radius: 35px 10em 0%;
 }
