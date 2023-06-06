@@ -91,7 +91,7 @@ picture {
 /* Estilo do logotipo */
 .img-logo {
     height: 9rem;
-    padding-left: 30px;
+    padding: 10px 30px;
 }
 
 /* Estilo das fotos padrão */
