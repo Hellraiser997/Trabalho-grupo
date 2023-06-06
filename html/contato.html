@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclusão dos arquivos de estilos CSS -->
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/contato.css"> 
+    <link rel="stylesheet" href="../css/media.css"> 
+    <link rel="stylesheet" href="../css/mediaContato.css"> 
+
+    <!-- Título da página exibido na guia do navegador -->
+    <title>BoliCrash</title> 
+  </head>
+  <!-- A tag <body> é usada para definir o corpo do documento HTML. Ela contém todo o conteúdo visível na página, como cabeçalhos, parágrafos, imagens, links, formulários, entre outros elementos. É dentro dessa tag que a estrutura geral do documento é construída. -->
+  <body>
+    <!-- A tag <header> é utilizada para agrupar o conteúdo que representa o cabeçalho da página. Normalmente, o cabeçalho contém elementos como logotipos, títulos, menus de navegação e outras informações principais relacionadas ao site. -->
+    <header>
+      <!-- Inclusão de uma imagem do logotipo -->
+      <img src="../img/logo.png" alt=""/> 
+      <h2>BoliCrach</h2>
+      <!-- A tag <nav> é usada para definir uma seção de navegação em uma página HTML. Ela é usada para agrupar os links de navegação, como os menus do site. -->
+      <nav>
+        <!-- Link para a página "quemsomos.html" -->
+        <a href="../html/quemsomos.html">Quem Somos</a> 
+        <!-- Link para a página "nossaequipe.html" -->
+        <a href="../html/nossaequipe.html">Nossa Equipe</a> 
+        <!-- Link para a página "servicos.html" -->
+        <a href="../html/servicos.html">Serviços</a> 
+        <!-- Link para a página "contato.html" -->
+        <a href="../html/contato.html">Contato</a> 
+      </nav>
+    </header>
+    <!-- A tag <main> é usada para agrupar o conteúdo principal de uma página HTML. Geralmente, ela representa a seção central do conteúdo, excluindo cabeçalhos, rodapés, barras laterais e outras partes secundárias. -->
+    <main>
+      <!-- Criação de uma seção com a classe "box" -->
+      <section class="box"> 
+        <!-- Formulário com ação "#" e ID "formulario" -->   
+        <form action="#" id="formulario" >  
+          <!-- Título "CONTATO" para o formulário -->
+          <h2>CONTATO</h2> 
+          <!-- Rótulo para o campo de nome -->
+          <label for="nome">Nome Completo</label> 
+          <!-- Campo de entrada de texto para o nome -->
+          <input type="text" class="input_text" name="nome" id="nome"/> 
+      
+          <!-- Rótulo para o campo de email -->
+          <label for="email">E-mail</label> 
+          <!-- Campo de entrada de email -->
+          <input type="email" class="input_text" name="email" id="email"/> 
+      
+          <!-- Rótulo para o campo de mensagem -->
+          <label for="mensagem">Mensagem</label> 
+          <!-- Campo de texto para a mensagem -->
+          <textarea name="mensagem" id="mensagem" rows="4"></textarea> 
+      
+          <!-- Botão de envio do formulário com chamada para a função "enviarFormulario()" -->
+          <button class = "botao" type="submit" onclick="enviarFormulario()" >Enviar</button> 
+        </form>      
+      </section>
+    </main>
+    <!-- A tag <footer> é usada para representar o rodapé de uma página HTML. Ela contém informações de rodapé, como direitos autorais, links adicionais, informações de contato, entre outros.-->
+    <footer>
+      <!-- Texto de rodapé -->
+      <p>Feito com 💛 por Squad 2. All rights reserved.</p> 
+    </footer>
+    <!-- Inclusão do arquivo de script "script.js" -->
+    <script src="../js/script.js"></script> 
+  </body>
+</html>
