@@ -1,0 +1,117 @@
+/* Define as propriedades para a tag <main> */
+main {
+    width: 100%;
+    height: 100%;
+    /* Define um degradê linear como plano de fundo */
+    background: linear-gradient(170deg, #043290, #1c8692);
+}
+
+/* Define as propriedades para a tag <section> */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* Define as propriedades para a tag <h2> */
+h2 {
+    color: #FFFFFF;
+    /* Aplica um filtro de brilho de 60% ao plano de fundo */
+    backdrop-filter: brightness(60%);
+    padding: 10px;
+    /* Define um raio de 10 pixels para arredondar os cantos */
+    border-radius: 10px;
+    font-size: 22pt;
+    margin-top: 2%;
+    margin-bottom: 20px;
+}
+
+/* Define as propriedades para a classe .cardapio */
+.container {
+    /* Aplica um filtro de brilho de 60% ao plano de fundo */
+    backdrop-filter: brightness(60%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* Define um raio de borda personalizado */
+    border-radius: 35px 10em 0%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Define as propriedades para a classe .cardapio-itens */
+.porcoes, .lanches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 16pt;
+}
+
+/* Define as propriedades para a tag <h3> */
+h3 {
+    font-size: 19pt;
+}
+
+/* Define as propriedades para a tag <ul> */
+ul {
+    margin: 50px;
+    /* Remove os marcadores de lista */
+    list-style: none;
+    /* Define uma borda sólida de 1px na cor branca */
+    border: solid 1px #FFFFFF ;
+    padding: 5px;
+    border-radius: 10px ;
+}
+
+/* Define as propriedades para a tag <form> */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    backdrop-filter: brightness(60%);
+    border-radius: 35px 10em 0%;
+    padding: 50px;
+}
+
+/* Define as propriedades para a tag <input> do tipo number */
+.input-number, select {
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    margin: 2px;
+}
+
+/* Define a cor de texto preta para os elementos da tag option */
+option {
+    color: black;
+}
+
+/* Define as propriedades para a classe .botao */
+.botao {
+    margin-top: 15px;
+    /* Define a base flexível como 20% do espaço disponível */
+    width: 150px;
+    height: 50px;
+    /* Define o plano de fundo como transparente */
+    background: transparent;
+    /* Define uma borda sólida de 1px na cor branca */
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    /* Adiciona uma transição de 0.5 segundos para efeitos de transição */
+    transition: 0.5s;
+}
+
+/* Define as propriedades para a classe .botao quando o mouse está sobre ele */
+.botao:hover {
+    background-color: #FFFFFF;
+    color: #043290;
+    /* Define um raio de borda personalizado */
+    border-radius: 35px 10em 0%;
+}
