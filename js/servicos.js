@@ -6,17 +6,14 @@ const adicionalPorMinuto = 0.50
 // Função para calcular o valor da hora
 function calcularHora() {
     // Solicitação dos dados ao usuário
-    diaDaSemana = Number(prompt("Qual dia da semana pretende jogar:\nDigite 1 para Segunda-feira a Quinta-feira\nDigite 2 para Sexta-feira a Domingo"))
-    qtdPessoas = Number(prompt("Quantas pessoas irão jogar? (Digite apenas número)"))
-    // Verificação se os dados são válidos
-    if (qtdPessoas <= 0) {
-        alert("Valor inválido")
-    }
+    diaDaSemana = document.getElementById("dia-semana").value
+    qtdPessoas = document.getElementById("quantidade-pessoas").value
+
     // Solicitação das horas adicionais
-    horaExtra = Number(prompt("Digite quantos minutos adicionais pretende ficar: 0 - 300"))
+    horaExtra = document.getElementById("minutos-adicionais").value
     console.log(diaDaSemana)
     // Verificação do dia da semana para definir o valor base
-    if (diaDaSemana == 1) {
+    if (diaDaSemana <= 4) {
         horaBaseReais = 45
     } else {
         horaBaseReais = 60
