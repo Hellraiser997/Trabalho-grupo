@@ -1,127 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
-
-/* Definições globais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Estilo do corpo */
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-/* Estilo do cabeçalho */
-header {
-    height: 70px;
-    width: 100vw;
-    background: linear-gradient(90deg, #010326 0%, #021859 100%);
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0px;
-}
-
-/* Estilo da navegação */
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 45%;
+/*Estilização da tag <section> */
+section {
     height: 100%;
-}
-
-/* Estilo do rodapé */
-footer {
-    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    text-align: center;
-    background: linear-gradient(90deg, #010326 0%, #021859 100%);
-    bottom: 0;
+}
+
+/* Estilização da tag <section>*/
+figure {
     display: flex;
-    flex-direction: column;
-}
-
-/* Estilo do texto no rodapé */
-footer p {
-    color: #72E5F2;
-}
-
-/* Estilo do conteúdo principal */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 70px;
-    background: linear-gradient(170deg, #043290, #1c8692);
-}
-
-/* Estilo da imagem e descrição */
-picture {
-    display: flex;
-    align-items: center;
-}
-
-/* Estilo dos links de navegação e atribuição */
-.link-nav, .link-atribuicao {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
+    flex-direction: row;
     justify-content: space-between;
+    width: 75%;
+    padding: 20px;
 }
 
-/* Estilo dos links de navegação */
-.link-nav {
-    border-radius: 15px;
-    padding: 9px;
+/* Estilização da tag <picture>*/
+picture {
+    width: 200px;
 }
 
-/* Estilo dos links de navegação ao passar o mouse */
-.link-nav:hover {
-    color: #72E5F2;
-    scale: 1.1;
-}
-
-/* Estilo do logotipo */
-.img-logo {
-    height: 9rem;
-    padding: 10px 30px;
-}
-
-/* Estilo das fotos padrão */
-.foto-padrao {
+/* Estilização da tag <img> dentro da tag <picture>*/
+picture img {
     width: 500px;
-    height: 400px;
-    margin-top: 30px;
-    margin-bottom: 10px; 
-    border-radius: 20px;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.943);
+    border-radius: 35px 10em 0%;
 }
 
-/* Estilo da descrição */
-.descricao {
-    width: 490px;
-    margin-left: 20px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    color: white;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-}
-
-/* Estilo dos links de atribuição */
-.link-atribuicao {
-    font-size: 15px;
-}
-
-/* Estilo dos links de atribuição ao passar o mouse */
-.link-atribuicao:hover {
-    color: #72E5F2;
-    font-size: 17px;
+/* Estilização da tag <p> dentro da tag <figure>*/
+figure p {
+    align-self: center;
+    text-align: justify;
+    width: 45%;
+    font-size: 14pt;
 }
