@@ -1,0 +1,55 @@
+@media screen and (min-width:360px) and (max-width:767px) {
+
+    /*Estilização da tag <section> */
+    section {
+        padding: 0px;
+    }
+
+    /* Estilização da tag <Figure>*/
+    figure {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Estilização da tag <picture>*/
+    picture {
+        width: 100%;
+    }
+
+    /* Estilização da tag <img> dentro da tag <picture>*/
+    picture img {
+        width: 100%;
+    }
+
+    /* Estilização da tag <p> dentro da tag <figure>*/
+    figure p {
+        width: 70%;
+        font-size: 10pt;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    /* Estilização da tag <section>*/
+    figure {
+        width: 90%;
+    }
+
+    /* Estilização da tag <picture>*/
+    picture {
+        width: 100%;
+    }
+
+    /* Estilização da tag <img> dentro da tag <picture>*/
+    picture img {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Estilização da tag <p> dentro da tag <figure>*/
+    figure p {
+        width: 100%;
+        font-size: 11pt;
+    }
+
+}
