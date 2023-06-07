@@ -32,6 +32,6 @@ $ git clone https://github.com/Hellraiser997/Trabalho-grupo.git
 $ cd Trabalho-grupo
 ```
 
-Feito com ❤️ por Dilnae, Felipe, Priscila, Victor e Thaise 👋🏽
+Feito com ❤️ por Dilnae, Felipe, Priscila, Thaise e Victor👋🏽
 
 </div>
