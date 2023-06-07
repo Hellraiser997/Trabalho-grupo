@@ -1,11 +1,16 @@
+
+
+body {
+  height: 100%;
+}
+
 /* Estiliza a seção principal:
    - Define a altura da seção como 80% do contêiner pai
    - Exibe o conteúdo da seção centralizado horizontalmente
    - Alinha o conteúdo da seção centralizado verticalmente
    - Define um preenchimento de 20 pixels em todas as direções */
 main {
-  height: 70%;
-  margin-top: 4%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +92,6 @@ form {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 2.4px;
 }
 
 form h2 {  
@@ -104,7 +108,6 @@ form input, textarea {
   backdrop-filter: brightness(60%);
   border: 1px solid black;
   color: #ffffff;
-  margin-bottom: 30px;
 }
 
 /* Define as propriedades para a classe .botao */
