@@ -1,0 +1,23 @@
+@media screen and (min-width:360px) and (max-width:767px) {
+    /* Definição do display da section */
+section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Ajuste da imagem contida na section */
+section img {
+    padding: 10px;
+    border-radius: 10%;
+    width: 80%;
+}
+
+/* Ajuste do parágrafo contido na section */
+section p {
+    width: 70%;
+    text-align: justify;
+}
+}

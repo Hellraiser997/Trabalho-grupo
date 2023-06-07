@@ -11,7 +11,7 @@ section {
 }
 
 /* Define as propriedades para a tag <h2> */
-h2 {
+section h2 {
     color: #FFFFFF;
     /* Aplica um filtro de brilho de 60% ao plano de fundo */
     backdrop-filter: brightness(60%);
