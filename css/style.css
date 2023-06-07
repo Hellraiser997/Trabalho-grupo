@@ -1,5 +1,7 @@
-/* Importa a fonte 'Poppins' do Google Fonts com diferentes pesos */
+/* Importa a fonte 'Poppins' e 'Inter' do Google Fonts com diferentes pesos */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
 /* Define estilos globais para todos os elementos, como margem, preenchimento, caixa-modelo e fonte */
 * {
     margin: 0;
@@ -8,46 +10,30 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Estiliza o corpo do documento:
-   - Exibe o conteúdo em uma coluna
-   - Define a altura do corpo como 100% da altura da viewport
-   - Oculta o overflow (rolagem) do corpo
-   - Define um plano de fundo com um gradiente linear
-   - Define a cor do texto como branco */
+/* Estiliza o corpo do documento:*/
 body {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
-    background: linear-gradient(170deg, #043290, #1c8692);
     color: white;
 }
 
-/* Estiliza o cabeçalho:
-   - Define a altura do cabeçalho como 50 pixels
-   - Define um plano de fundo com um gradiente linear
-   - Exibe o conteúdo do cabeçalho em uma linha
-   - Alinha o conteúdo do cabeçalho horizontalmente, distribuindo-o igualmente
-   - Alinha o conteúdo verticalmente ao centro
-   - Define o peso da fonte como 300 (leve)
-   - Define um preenchimento de 0 nas laterais e 20 pixels no topo e na base */
+/* Define as propriedades para a tag <header> */
 header {
     height: 70px;
-    width: 100vw;
+    width: 100%;
+    /* Define um gradiente para o fundo do header */
     background: linear-gradient(90deg, #010326 0%, #021859 100%);
     display: flex;
     justify-content: space-between;
-    top: 0px;
 }
 
-/* Estiliza a imagem do logotipo no cabeçalho:
-   - Define a altura da imagem como 9 rem
-   - Define um preenchimento de 10 pixels nas laterais e 30 pixels no topo e na base
-   - Alinha a imagem à linha de base do cabeçalho */
+/* Define as propriedades para a tag <img> dentro do cabeçalho */
 header img {
     height: 9rem;
     padding: 10px 30px;
     align-self: baseline;
+    /* Define que a imagem está por cima dos outros itens */
     z-index: 1;
 }
 
@@ -56,12 +42,7 @@ header h2 {
     display: none;
 }
 
-/* Estiliza a navegação:
-   - Exibe o conteúdo da navegação em uma linha
-   - Alinha o conteúdo da navegação horizontalmente, distribuindo-o igualmente
-   - Alinha o conteúdo verticalmente ao centro
-   - Define a largura da navegação como 70% do contêiner pai
-   - Define a altura da navegação como 100% */
+/* Define as propriedades para a tag <nav> dentro do cabeçalho */
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -70,12 +51,7 @@ nav {
     height: 100%;
 }
 
-/* Estiliza os links <tags a>:
-   - Remove a decoração de texto (sublinhado)
-   - Define o tamanho da fonte como 1 rem
-   - Define o peso da fonte como 300 (leve)
-   - Define a cor do texto como branco
-   - Alinha o conteúdo do link horizontalmente, distribuindo-o igualmente */
+/* Estiliza a tag <a> para todas as páginas */
 a {
     text-decoration: none;
     font-size: 20px;
@@ -84,40 +60,59 @@ a {
     justify-content: space-between;
 }
 
-/* Estiliza o link quando o mouse passa por cima:
-    - Altera a cor do texto para #72E5F2 (azul claro)
-    - Adiciona uma transição suave de 0,5 segundos na mudança de cor */
+/* Estiliza a tag <a> quando o mouse estive em cima */
 a:hover {
     color: #72E5F2;
+    /* Aumenta o tamanho do item */
     scale: 1.1;
 }
 
-/* Estiliza o rodapé:
-    - Define a posição fixa, fazendo com que o rodapé fique sempre visível no final da página
-    - Define a largura do rodapé como 100% da largura da viewport
-    - Define um preenchimento de 10 pixels no topo e na base do rodapé
-    - Alinha o texto centralmente
-    - Define um plano de fundo com um gradiente linear
-    - Posiciona o rodapé na parte inferior da página
-    - Define o peso da fonte como 300 (leve)
-    - Define o tamanho da fonte como 1 rem
-    - Define a altura do rodapé como 10 unidades de altura da viewport (dvh) */
+/* Define as propriedades para a tag <main> */
+main {
+    width: 100%;
+    height: 100%;
+    /* Define um degradê linear como plano de fundo */
+    background: linear-gradient(170deg, #043290, #1c8692);
+}
+
+/* Define as propriedades para a classe .botao */
+.botao {
+    /* Define a base flexível como 20% do espaço disponível */
+    width: 150px;
+    height: 50px;
+    /* Define o plano de fundo como transparente */
+    background: transparent;
+    /* Define uma borda sólida de 1px na cor branca */
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    align-self: center;
+    /* Adiciona uma transição de 0.5 segundos para efeitos de transição */
+    transition: 0.5s;
+    margin-top: 30px;
+}
+
+/* Define as propriedades para a classe .botao quando o mouse está sobre ele */
+.botao:hover {
+    background-color: #FFFFFF;
+    color: #043290;
+    /* Define um raio de borda personalizado */
+    border-radius: 35px 10em 0%;
+}
+
+/* Define as propriedades do footer */
 footer {
-    position: fixed;
-    width: 100%;    
+    width: 100%;
     padding: 20px;
     text-align: center;
     background: linear-gradient(90deg, #010326 0%, #021859 100%);
-    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    font-size: 1rem;
-    height: 10dvh;
 }
 
+/* Define as propriedades para a tag <p> dentro do footer */
 footer p {
     color: #72E5F2;
 }

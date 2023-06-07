@@ -1,33 +1,25 @@
-/* Estiliza a seção principal:
-   - Define a altura da seção como 80% do contêiner pai
-   - Exibe o conteúdo da seção centralizado horizontalmente
-   - Alinha o conteúdo da seção centralizado verticalmente
-   - Define um preenchimento de 20 pixels em todas as direções */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Define as propriedades para a tag <Main> */
 main {
-  height: 70%;
-  margin-top: 4%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-/* Estiliza a seção com classe "box":
-   - Define a posição como relativa
-   - Define a largura da seção como 350 pixels
-   - Define a altura da seção como 100% do contêiner pai
-   - Define a cor do texto como branco
-   - Define um raio de borda de 50 pixels no canto superior esquerdo e 5 pixels no canto superior direito
-   - Define o overflow (rolagem) da seção como oculto
-   - Define uma margem inferior de 20 pixels */
+/* Define as propriedades para a tag <section com classe box> */
 section.box {
   position: relative;
   width: 350px;
   height: 100%;
   color: #ffffff;
-  border-radius: 50px 5px;
+  border-radius: 35px 10em 0%;
   overflow: hidden;
-  margin-bottom: 20px;
+  max-height: 550px;
 }
 
 /* Criei 2 elementos para dar o efeito de animação ao redor do form,
@@ -69,6 +61,9 @@ section.box::after {
   animation-delay: -3s;
 }
 
+/* Criei uma animação chamada "animate" com duração de 6 segundos, linear e infinita
+  - Iniciando com 0 grau de rotação
+  - Finalizando com 360 graus de rotação */
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -78,6 +73,7 @@ section.box::after {
   }
 }
 
+/* Define as propriedades para a tag <form> */
 form {
   position: absolute;
   inset: 2px;
@@ -87,46 +83,25 @@ form {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 2.4px;
+  justify-content: space-between;
+  border-radius: 35px 10em 0%;
 }
 
+/* Define as propriedades para a tag <h2> presente no form */
 form h2 {  
   align-self: center;
   margin-bottom: 20px;
 }
 
+/* Define as propriedades para a tag <label> presente no form */
 form label {
   padding: 15px 0;
 }
 
+/* Define as propriedades para a tag <input> e <textarea> presentes no form */
 form input, textarea {
   background-color: transparent;
   backdrop-filter: brightness(60%);
   border: 1px solid black;
   color: #ffffff;
-  margin-bottom: 30px;
-}
-
-/* Define as propriedades para a classe .botao */
-.botao {
-  /* Define a base flexível como 20% do espaço disponível */
-  width: 150px;
-  height: 50px;
-  /* Define o plano de fundo como transparente */
-  background: transparent;
-  /* Define uma borda sólida de 1px na cor branca */
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF;
-  align-self: center;
-  /* Adiciona uma transição de 0.5 segundos para efeitos de transição */
-  transition: 0.5s;
-  margin-top: 30px;
-}
-
-/* Define as propriedades para a classe .botao quando o mouse está sobre ele */
-.botao:hover {
-  background-color: #FFFFFF;
-  color: #043290;
-  /* Define um raio de borda personalizado */
-  border-radius: 35px 10em 0%;
 }
