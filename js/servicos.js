@@ -1,35 +1,57 @@
 // Declaração das variáveis utilizadas
-var horaBaseReais, diaDaSemana, horaExtra, valorDaHora, qtdPessoas, valorDaHoraPorPessoa
-// Declaração da constante utilizada
-const adicionalPorMinuto = 0.50
+var horaBaseReais = 0
+var diaDaSemana = 0
+var horaExtra = 0
+var valorDaHora = 0
+var qtdPessoa = 0
+var valorDaHoraPorPessoa = 0
+var adicionalPorMinuto = 0.50
 
 // Função para calcular o valor da hora
 function calcularHora() {
-    // Solicitação dos dados ao usuário
-    diaDaSemana = document.getElementById("dia-semana").value
-    qtdPessoas = document.getElementById("quantidade-pessoas").value
 
-    // Solicitação das horas adicionais
-    horaExtra = document.getElementById("minutos-adicionais").value
-    console.log(diaDaSemana)
     // Verificação do dia da semana para definir o valor base
-    if (diaDaSemana <= 4) {
-        horaBaseReais = 45
-    } else {
-        horaBaseReais = 60
+    while (true) {
+        diaDaSemana = prompt("Digite 1 para dias de semana e 2 para finais de semana")
+        if (diaDaSemana == 1) {
+            horaBaseReais = 45
+            break
+        } else if (diaDaSemana == 2) {
+            horaBaseReais = 60
+            break
+        } else {
+            alert("Valor inválido")
+        }
     }
+
+    while (true) {
+        qtdPessoas = prompt("Digite a quantidade de pessoas")
+        if (qtdPessoas == 0 || qtdPessoas > 6) {
+            alert("Digite um valor maior que 0 e menor ou igual que 6")
+        } else {
+            break
+        }
+    }
+
+    while (true) {
+        horaExtra = prompt("Digite os minutos adicionais entre 0 e 300 minutos:")
+        if (horaExtra < 0 || horaExtra > 300) {
+            alert("Digite um valor entre 0 e 300 minutos")
+        } else {
+            break
+        }
+    }
+
     // Calculo do valor da hora
     valorDaHora = horaBaseReais + (horaExtra * adicionalPorMinuto)
-    // Calculo do valor da hora por pessoa
     valorDaHoraPorPessoa = valorDaHora / qtdPessoas
-    // Formatação dos valores para moeda
-    valorDaHora = valorDaHora.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
-    horaBaseReais = horaBaseReais.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
-    valorDaHoraPorPessoa = valorDaHoraPorPessoa.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+    // Calculo do valor da hora por pessoa
+    // Solicitação das horas adicionais
+
     // Verificação se é apenas uma pessoa
     if (qtdPessoas == 1) {
-        alert("O valor da pista ficou em: " + valorDaHora + "\nSendo o valor base: " + horaBaseReais)
+        alert(`O valor da pista ficou em:  ${valorDaHora}R$\nSendo o valor base: ${horaBaseReais}R$`)
     } else {
-        alert("O valor da pista ficou em: " + valorDaHora + "\nSendo o valor base: " + horaBaseReais + "\nValor por pessoa: " + valorDaHoraPorPessoa)
+        alert(`O valor da pista ficou em: ${valorDaHora}R$ \nSendo o valor base:  horaBaseReais \nValor por pessoa: ${valorDaHoraPorPessoa}R$`)
     }
 }
