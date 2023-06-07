@@ -1,13 +1,4 @@
-@media screen and (max-width: 680px){
-  header img {
-    display: none;
-  }
-  header h2 {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px){
+@media screen and (min-width:360px) and (max-width:767px) {
   header {
     flex-direction: column;
     align-items: baseline;
@@ -17,10 +8,27 @@
   nav {
     width: 100%;
   }
+
+  header img {
+    display: none;
+  }
+
+  header h2 {
+    display: block;
+    align-self: center;
+  }
+
+  body header nav a {
+    font-size: 13pt;
+  }
+
+  body > header > nav > a:nth-child(4) {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 330px){
-  nav a {
-    font-size: .8rem;
+@media screen and (max-width:1000px) {
+  nav {
+    width: 100%;
   }
 }
