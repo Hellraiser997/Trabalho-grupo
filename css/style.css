@@ -51,6 +51,8 @@ nav {
     height: 100%;
 }
 
+
+
 /* Estiliza a tag <a> para todas as páginas */
 a {
     text-decoration: none;
@@ -58,6 +60,10 @@ a {
     font-weight: 500;
     color: white;
     justify-content: space-between;
+}
+
+nav a:nth-child(4) {
+    color: #72E5F2;
 }
 
 /* Estiliza a tag <a> quando o mouse estive em cima */
